@@ -20,7 +20,8 @@ body
 div.document { text-align: left; page-break-after: always; }
 
 div.document-jurisdiction { text-align: right; font-style: italic; }
-div.document-title        { text-align: center; text-transform: uppercase; font-weight: bold; font-size: 120%; padding: 30pt 0pt; }
+div.document-title        { text-align: center; font-weight: bold; font-size: 120%; padding: 30pt 0pt; }
+div.document-title div.name { text-transform: uppercase; }
 
 div.chapter-header { padding-top: 18pt; font-weight: bold; }
 div.article        { padding-top: 12pt; text-align: justify; }

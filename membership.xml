@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE document [
+<!ENTITY laquo "&#171;">
+<!ENTITY raquo "&#187;">
+]>
 
 <document-container>
 	
@@ -21,14 +25,12 @@
 			</jurisdiction>
 					
 			<title>
-				Положение о членах, сторонниках
-				<br/>
-				и территориальных организациях
-				<br/>
-				от <date>08.04.18</date>
-				<note>
-					(ТРЕБУЕТСЯ РЕДАКЦИЯ)
-				</note>
+				<name>
+					Положение о членах, сторонниках
+					<br/>
+					и территориальных организациях
+				</name>
+				от <date>&laquo;04&raquo; марта 2019 г.</date>
 			</title>
 			
 		</header>

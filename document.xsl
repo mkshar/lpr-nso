@@ -30,6 +30,12 @@
 		</xsl:element>
 	</xsl:template>
 	
+	<xsl:template match="name">
+		<div class="name">
+			<xsl:apply-templates/>
+		</div>
+	</xsl:template>
+	
 	<xsl:template match="title">
 		<div class="document-title">
 			<xsl:apply-templates/>
