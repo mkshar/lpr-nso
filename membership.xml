@@ -12,10 +12,12 @@
 
 		<header>
 			
-			<jurisdiction>
-				Новосибирское региональное отделение
-				<br/>
-				Либертарианской партии России
+			<jurisdiction href="https://nso.libertarian-party.ru">
+				<name>
+					Новосибирское региональное отделение
+					<br/>
+					Либертарианской партии России
+				</name>
 			</jurisdiction>
 					
 			<title>
@@ -23,8 +25,7 @@
 				<br/>
 				и территориальных организациях
 				<br/>
-				от
-				<document-date>08.04.18</document-date>.
+				от <date>08.04.18</date>
 				<note>
 					(ТРЕБУЕТСЯ РЕДАКЦИЯ)
 				</note>
@@ -316,9 +317,9 @@
 
 	<history>
 		
-		<edition id="1" date="2018-04-18" authors="Анорин">
+		<revision id="1" date="2018-04-18" authors="Анорин">
 			Начальная редакция
-		</edition>
+		</revision>
 		
 	</history>
 

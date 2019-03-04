@@ -24,18 +24,22 @@ div.document-title        { text-align: center; text-transform: uppercase; font-
 
 div.chapter-header { padding-top: 18pt; font-weight: bold; }
 div.article        { padding-top: 12pt; text-align: justify; }
+div.subarticle        { padding-top: 12pt; text-align: justify; }
 span.id { float: left; display: inline-block; margin-right: 10pt; }
 span.body { text-align: justify; }
 
-div.log { background-color: white; padding: 50pt 80pt; text-align: left; margin-bottom: 10pt; }
+div.history { background-color: white; padding: 50pt 80pt; text-align: left; margin-bottom: 10pt; }
 
-div.log table { width: 100%; border-collapse: collapse; }
-div.log table th, td { border: 1px solid black; text-align: center; }
+div.history table { width: 100%; border-collapse: collapse; }
+div.history table th, td { border: 1px solid black; text-align: center; }
 td.description { text-align: left; }
 
 div.controls { display: none; }
 
 button { padding: 2pt; }
+
+
+a { color: black; text-decoration: none; }
 
 @media screen
 {
@@ -45,4 +49,5 @@ button { padding: 2pt; }
 	div.document { width: 750pt;  margin: 10pt 0; padding: 50pt 80pt; }
 	div.log { width: 750pt; }
 	div.controls { display: block; }
+	a:hover { color: blue; }
 }

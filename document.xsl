@@ -11,6 +11,62 @@
 
 	<xsl:template match="br"><br/></xsl:template>
 	
+	<xsl:template match="jurisdiction">
+		<xsl:element name="a">
+			<xsl:attribute name="href"><xsl:value-of select="@href"/></xsl:attribute>
+			<xsl:value-of select="$cr"/>
+			<xsl:value-of select="$tab"/>
+			<xsl:value-of select="$tab"/>
+			<xsl:value-of select="$tab"/>
+			<xsl:value-of select="$tab"/>
+			<div class="document-jurisdiction">
+				<xsl:apply-templates/>
+				<xsl:value-of select="$tab"/>
+			</div>
+			<xsl:value-of select="$cr"/>
+			<xsl:value-of select="$tab"/>
+			<xsl:value-of select="$tab"/>
+			<xsl:value-of select="$tab"/>
+		</xsl:element>
+	</xsl:template>
+	
+	<xsl:template match="title">
+		<div class="document-title">
+			<xsl:apply-templates/>
+		</div>
+	</xsl:template>
+	
+	<xsl:template match="history">
+		<div class="controls">
+			<button onclick="document.getElementById('history').style.display='none';">Скрыть историю редакций</button>
+			<br/>
+			<br/>
+		</div>
+		<table>
+			<tr><th width="15%">Редакция</th><th width="15%">Дата</th><th width="15%">Автор</th><th>Описание</th></tr>
+			<xsl:for-each select="revision">
+				<tr>
+					<td class="id">         <xsl:value-of select="@id"/>     </td>
+					<td class="date">       <xsl:value-of select="@date"/>   </td>
+					<td class="authors">    <xsl:value-of select="@authors"/></td>
+					<td class="description"><xsl:value-of select="."/>       </td>
+				</tr>
+			</xsl:for-each>
+		</table>
+	</xsl:template>
+	
+	<xsl:template match="date">
+		<span class="document-date">
+			<xsl:apply-templates/>
+		</span>
+	</xsl:template>
+	
+	<xsl:template match="note">
+		<div class="note">
+			<xsl:apply-templates/>
+		</div>
+	</xsl:template>
+	
 	<xsl:template match="chapter-header">
 		<div class="chapter-header">
 			<xsl:value-of select="$cr"/>
@@ -213,7 +269,7 @@
 					</div><xsl:comment>document</xsl:comment>
 					<xsl:value-of select="$cr"/>
 					<xsl:value-of select="$tab"/>
-					<div class="history">
+					<div class="history" id="history">
 						<xsl:apply-templates select="history"/>
 						<xsl:value-of select="$cr"/>
 						<xsl:value-of select="$tab"/>
