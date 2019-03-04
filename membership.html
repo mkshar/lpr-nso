@@ -18,16 +18,14 @@
 					margin: 0;
 				}
 			}
-			
-			html
+
+			body
 			{
 				color: #000000;
 				background: #FFFFFF;
+				text-align: center;
 				font-family: Verdana, Arial;
-				overflow-y: scroll;
 			}
-
-			body { text-align: center; }
 			
 			div.document { text-align: left; page-break-after: always; }
 			
@@ -49,7 +47,7 @@
 			
 			@media screen
 			{
-				body { background-color: gray; }
+				body { background-color: gray; overflow-y: scroll; }
 				div.container { display: inline-block;  }
 				div.document { background-color: white; }
 				div.document { width: 750pt;  margin: 10pt 0; padding: 50pt 80pt; }
