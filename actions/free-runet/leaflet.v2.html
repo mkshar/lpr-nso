@@ -1,0 +1,267 @@
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../lib/ISO-216.css">
+		<script type="text/javascript" src="../../lib/qrcode/qrcode.js"></script>
+		
+		<title>Листовка против изоляции Рунета</title>
+		
+		<style type="text/css">
+			/* CSS Reset */
+			*, *:after, *:before
+			{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			
+			body{ margin: 0; padding: 0; }
+			
+			div.leaflet { background-color: white; border: 1px solid black; text-align: center; font-family: Verdana, Arial; float: left; page-break-after: always; xtransform: rotate( 90deg ); }
+			
+			@media print
+			{
+				body { background-color: white; }
+				div.leaflet { border: 0px solid white; }
+			}
+			
+			@media screen
+			{
+				body { background-color: gray; }
+				div.leaflet { border: 1px solid white; margin: 10px 0 0 10px; }
+			}
+			
+			div.content { margin: 5mm; xborder: 1px solid black; height: 200mm; }
+			img.logo { width: 40mm; height: 40mm; }
+			td.logo { text-align: center; width: 33.33%; }
+			td.org { text-align: center; xfont-style: italic; }
+			td.url { text-align: center; padding: 1mm; font-weight: bold; }
+			p { /*margin-bottom: 0.5mm;*/ text-indent: 18pt; }
+			
+			div.title       { height:  15mm; font-size: 20pt; font-weight: bold; text-transform: uppercase; padding-top: 4mm; color: white; background-color: red; }
+			div.action      { height:  10mm; font-size: 14pt; font-weight: bold; text-transform: uppercase; padding-top: 3mm; }
+			div.description { height: 111mm; font-size: 12pt; text-align: justify; padding: 0 5mm; padding-top: 1.5mm; }
+			div.instruction { height: 173mm; font-size: 12pt; text-align: justify; padding: 0 5mm; xborder: 1px solid black; font-size: 10pt; }
+			div.actors      { height: 59mm; }
+			
+			/*div.signpost-action { background-color: green; height: 14mm; }*/
+			
+			div.signpost-action table.signpost { width: 100%; background-color: green; height: 14mm; }
+			div.signpost-event  table.signpost { width: 100%; background-color: red;  height: 14mm; }
+			
+			td.instruction {  font-size: 12pt; height: 14mm; text-align: center; text-transform: uppercase; font-weight: bold; color: white; padding-top: 0.5mm; }
+			td.pointer { font-size: 12mm; color: white; }
+			
+			table.instruction { width: 100%; border-collapse: collapse; font-size: 10pt; text-align: justify; }
+			td.step { width: 100%; }
+			div.step { margin: 0 2mm 0 0; }
+			td.qr { width: 30mm; margin: 0; padding: 0; }
+			img.qr { width: 30mm; height: 30mm; padding: 1mm; }
+			
+			span.url { color: blue; }
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="leaflet ISO-216-A5-portrait">
+		
+			<div class="content">
+			
+				<div class="title">
+					Свобода Рунета под угрозой
+				</div>
+				<!--<br/>-->
+				<div class="description">
+					<p>
+						Мы, граждане России, устали от постоянного сжатия пространства свободы и введения репрессивных законов.
+					</p>
+					<p>
+						По телевизору и со страниц кремлёвских газет эксперты наперебой рассказывают,
+						что в реальности до изоляции российского сегмента Сети дело не дойдет, и что всё это &ndash; просто мера предосторожности.
+						В действительности они просто льют воду на мельницу дальнейших репрессий.
+						Точно так же 20 лет назад они рассказывали, что в России невозможно уничтожить СМИ.
+						А 8 лет назад &ndash; что они не будут сажать за &laquo;мемы&raquo;. Мы не можем позволить им дальше нас обманывать.
+					</p>
+					<p>
+						Россия &ndash; не Иран и не Северная Корея, мы являемся частью цивилизованного мира.
+						Но путинская власть делает всё, чтобы мы продолжали отставать от Запада.
+						Путин ввёл против нас санкции, разворовал наши пенсионные накопления, вводит новые налоги и тянется к нашему интернету.
+						В прошлый раз власть попыталась отобрать нашу свободу переписки, но Павел Дуров не дал заблокировать Telegram.
+					</p>
+					<p>
+						В этот раз государство решило пойти дальше и забирает весь интернет.
+						Паутина цензуры все дальше оплетает нашу жизнь.
+					</p>
+					<p>
+						Мы против принятия закона об изоляции России от международной сети и требуем свободного интернета.
+					</p>
+				</div>
+				
+				<div class="actors">
+					
+					<table class="orgs">
+						<tr>
+							<td class="logo">
+								<img class="logo" src="../../logo/LPR.svg"/>
+							</td>
+							<td class="logo">
+								<img class="logo" src="../../logo/RKS.png"/>
+							</td>
+							<td class="logo">
+								<img class="logo" src="../../logo/OZI.png"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="org">
+								<span>Либертарианская партия</span>
+							</td>
+							<td class="org">
+								<span>РосКомСвобода</span>
+							</td>
+							<td class="org">
+								<span>Общество Защиты Интернета</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="url">
+								<span>libertarian-party.ru</span>
+							</td>
+							<td class="url">
+								<span>roskomsvoboda.org</span>
+							</td>
+							<td class="url">
+								<span>ozi-ru.org</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="signpost-action">
+					<table class="signpost">
+						<tr>
+							<td class="instruction">
+								Что можно сделать? Читайте на обороте!
+							<td>
+							<td class="pointer">
+								➥<!-- char u2400 -->
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="leaflet ISO-216-A5-portrait">
+			<div class="content">
+				<div class="signpost-event">
+					<table class="signpost">
+						<tr>
+							<td class="instruction">
+								Что случилось? Читайте на обороте!
+							<td>
+							<td class="pointer">
+								➥<!-- char u2400 -->
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="action">
+					Что можно сделать?
+				</div>
+				
+				<div class="instruction">
+					<p>
+						Чтобы не допустить принятия в текущем виде законопроекта о &laquo;суверенизации&raquo; Рунета, мы призываем Вас:
+					</p>
+					
+					<table class="instruction">
+						<tr>
+							<td class="step">
+								<div class="step">
+									Конечно же, ознакомиться с законопроектом.
+									<br/>
+									Вот его карточка на сайте Госдумы:
+									<br/>
+									<span class="url">sozd.duma.gov.ru/bill/608767-7</span>.
+								</div>
+							</td>
+							<td class="qr">
+								<img class="qr" src="urls/sozd.duma.gov.ru.svg"/><br/>
+							</td>
+						</tr>
+						<tr>
+							<td class="step">
+								<div class="step">
+									Зарегистрироваться на сайте электронной приёмной Госдумы <span class="url">priemnaya.duma.gov.ru</span>
+									и написать обращение председателю профильного комитета по информацион-
+									<br/>
+									ной политике, или своему территориальному депутату,
+									или всем сразу, и выразить (не прибегая к обсценной лексике) своё отношение
+									к законопроекту № 608767-7.
+								</div>
+							</td>
+							<td class="qr">
+								<img class="qr" src="urls/priemnaya.duma.gov.ru.svg"/><br/>
+							</td>
+						</tr>
+						<tr>
+							<td class="step">
+								<div class="step">
+									(Примеры обращений к депутатам можно посмотреть на сайте Цифровой Обороны: <span class="url">oborona.digital/examples</span>).
+								</div>
+							</td>
+							<td class="qr">
+								<img class="qr" src="urls/oborona.digital.svg"/><br/>
+							</td>
+						</tr>
+						<tr>
+							<td class="step">
+								<div class="step">
+									Подписать петицию на <span class="url">change.org</span>. По какой-то загадочной причине на эти петиции иногда обращают внимание.
+									Вот ссылка:
+									<br/>
+									<span class="url">change.org/p/против-изоляции-российского-интернета</span>.
+								</div>
+							</td>
+							<td class="qr">
+								<img class="qr" src="urls/change.org.svg"/><br/>
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<br/>
+					<p>
+						Законопроект принят в первом чтении, самое важное чтение &ndash; второе, к нему вносятся поправки.
+						Чем больше будет протестов по поводу законопроекта, тем вероятнее, что поправками его ослабят.
+						Возмущаться на улицах поведением власти полезно для того, чтобы о вашем возмущении узнали другие граждане.
+						Но власть обычно глуха к этому формату, и способна читать лишь официальные обращения.
+						Обращений по законопроекту о &laquo;суверенном интернете&raquo; уже поступило больше, чем за всю историю электронной приёмной Госдумы.
+						Давайте ещё поддадим жару!
+					</p>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--<div id="qr">&nbsp;</div>-->
+	</body>
+		<script>
+			var size = 100;
+			new QRCode
+			(
+				document.getElementById( "qr" ),
+				{
+					width  : size,
+					height : size,
+					useSVG : true,
+					correctLevel : 1,
+					colorDark    : "#000000",
+					colorLight   : "#ffffff",
+				}
+			).makeCode( "https://oborona.digital/kak-sozdat-obrashhenie-deputatam/" );
+		</script>
+</html>
