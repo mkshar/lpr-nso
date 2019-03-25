@@ -1,0 +1,96 @@
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../../lib/ISO-216.css">
+		
+		<title>Sonya wins</title>
+		
+		<style type="text/css">
+		
+			@font-face
+			{
+				font-family: MortalKombatMK4;
+				src: url( "../../../fonts/mortal-kombat/MK4.ttf" ) format( "truetype" );
+			}
+
+			/* CSS Reset */
+			*, *:after, *:before
+			{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			
+			body{ margin: 0; padding: 0; }
+			
+			div.banner { background-color: white; text-align: center; padding-top: 20mm; font-family: MortalKombatMK4; }
+			img { width: 100mm; height: 100mm; }
+			table { width: 90%; margin:auto; text-align: center; }
+			table#combat { width: 100%; color: red; }
+			
+			td#combat {  font-size: 1100%; /*font-weight: bold;*/ line-height: 0.95; }
+			
+			td#RT   { width: 40%; font-size: 500%; /*padding-top: 5mm;*/ text-align: center; background-color: #76bd1d; /*#8ee558;*/ }
+			td#vs   { width: 20%; font-size: 1000%; /*padding-top: 5mm;*/ font-family: Arial; padding: 10mm; font-weight: bold; }
+			td#name { width: 40%; font-size: 900%; /*font-weight: bold;*/ line-height: 0.95; font-family: Arial; font-weight: bold; text-align: center; background-color: #F36F21; }
+			
+			td#wins {  font-size: 1500%; /*font-weight: bold;*/ line-height: 0.95; }
+			
+			@media print
+			{
+				body { background-color: white; }
+				div.leaflet { border: 0px solid white; }
+			}
+			
+			@media screen
+			{
+				body { background-color: gray; }
+				div.banner { border: 1px solid white; margin: 10px; }
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="banner ISO-216-A3-landscape">
+		
+			<table id="combat">
+				<tr>
+					<td class="component" id="combat">MORTAL KOMBAT</td>
+				</tr>
+			</table>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<hr/>
+			<br/>
+			<br/>
+			<br/>
+			<table id="fight">
+				<tr>
+					<td class="component" id="RT"><img src="RT-logo-mod.svg"/><td>
+					<td class="component" id="vs">VS</td>
+					<td class="component" id="name">SONYA<br/>BLADE</td>
+				</tr>
+			</table>
+			<br/>
+			<br/>
+			<br/>
+			<hr/>
+			<br/>
+			<br/>
+			<br/>
+			<table id="combat">
+				<tr>
+					<td class="component" id="wins">SONYA WINS</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!--<div id="qr">&nbsp;</div>-->
+	</body>
+</html>

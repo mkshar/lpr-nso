@@ -1,0 +1,64 @@
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../../lib/ISO-216.css">
+		
+		<title>I love Sonya Blade</title>
+		
+		<style type="text/css">
+		
+			@font-face
+			{
+				font-family: MortalKombatMK4;
+				src: url( "../../../fonts/MK4.ttf" ) format( "truetype" );
+			}
+
+			/* CSS Reset */
+			*, *:after, *:before
+			{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			
+			body{ margin: 0; padding: 0; }
+			
+			div.banner { background-color: white; text-align: center; padding-top: 60mm; font-family: MortalKombatMK4; }
+			img { width: 100mm; height: 100mm; padding-right: 10mm; }
+			table { width: 80%; margin:auto; }
+			td#I {  font-size: 3900%; padding-top: 7mm; }
+			td#name {  font-size: 1500%; /*font-weight: bold;*/ line-height: 0.95; padding-top: 5mm; }
+			
+			@media print
+			{
+				body { background-color: white; }
+				div.leaflet { border: 0px solid white; }
+			}
+			
+			@media screen
+			{
+				body { background-color: gray; }
+				div.banner { border: 1px solid white; margin: 10px; }
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="banner ISO-216-A3-landscape">
+		
+			<table>
+				<tr>
+					<td class="component" id="I">I<td>
+					<td class="component"><img src="heart.svg"/></td>
+					<td class="component" id="name">SONYA<br/>BLADE</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!--<div id="qr">&nbsp;</div>-->
+	</body>
+</html>
