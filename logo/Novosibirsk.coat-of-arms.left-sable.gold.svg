@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <!-- width="600" height="588.37402"  -->
-<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" id="svg2608"  viewBox="0 0 600 600">
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" id="svg2608"  x="0px" y="0px" viewBox="0 0 600 588.4">
 	
 	<defs id="defs2610">
 		<style type="text/css"><![CDATA[
 
-			.tongue{ fill:#da251d; }
-			.body{ fill:#1f1a17; }
-			.claw, .pupil, .eye, .nose, .neck, .ear { fill:#dededd; }
+			.tongue{ fill:#BA9A56; }
+			.body{ fill:#BA9A56; }
+			.claw, .pupil, .eye, .nose, .neck, .ear { fill:#BA9A56; }
+			.ear, .eye { fill:white; }
+			.pupil { fill:#BA9A56; }
 
 		]]></style>
 	</defs>
 	
 	<g
-		transform="translate(150,-145)"
+		transform="translate(150,-150)"
 		id="layer1"
 		>
 		
 		<g
 			transform="matrix(5.5344631,0,0,5.5344631,61.994977,173.59391)"
-			xstyle="fill-rule:evenodd"
+			style="fill-rule:evenodd"
 			id="g2548"
 			>
 			
